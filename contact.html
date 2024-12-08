@@ -3,42 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact | Aiden Ross</title>
+    <title>Contact - Aiden's Portfolio</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<header>
-    <nav class="navbar">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="resume.html">Resume</a>
-        <a href="projects.html">Projects</a>
-        <a href="contact.html" class="active">Contact</a>
-    </nav>
+
+<header class="navbar">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="resume.html">Resume</a>
+    <a href="projects.html">Projects</a>
+    <a href="contact.html" class="active">Contact</a>
 </header>
 
-<main>
-    <section class="contact">
-        <h1>Contact Me</h1>
-        <p>Email: <a href="mailto:aiden@example.com">aiden@example.com</a></p>
-        <p>
-            <a href="https://www.linkedin.com/in/aidenross" class="btn">LinkedIn</a>
-            <a href="https://github.com/aidenross" class="btn">GitHub</a>
-        </p>
+<section class="contact">
+    <h2>Contact Me</h2>
+    <form id="contact-form">
+        <label for="name">Your Name</label>
+        <input type="text" id="name" required>
+        <label for="email">Your Email</label>
+        <input type="email" id="email" required>
+        <label for="message">Your Message</label>
+        <textarea id="message" rows="5" required></textarea>
+        <button type="submit" class="btn">Send Message</button>
+    </form>
+</section>
 
-        <form action="https://formspree.io/f/example" method="POST">
-            <label for="name">Your Name:</label>
-            <input type="text" id="name" name="name" required>
+<footer>
+    <p>&copy; 2024 Aiden Ross. All Rights Reserved.</p>
+</footer>
 
-            <label for="email">Your Email:</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="message">Your Message:</label>
-            <textarea id="message" name="message" required></textarea>
-
-            <button type="submit">Send</button>
-        </form>
-    </section>
-</main>
+<script src="js/main.js"></script>
 </body>
 </html>

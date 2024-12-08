@@ -3,32 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects | Aiden Ross</title>
+    <title>Projects - Aiden's Portfolio</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<header>
-    <nav class="navbar">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="resume.html">Resume</a>
-        <a href="projects.html" class="active">Projects</a>
-        <a href="contact.html">Contact</a>
-    </nav>
+
+<header class="navbar">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="resume.html">Resume</a>
+    <a href="projects.html" class="active">Projects</a>
+    <a href="contact.html">Contact</a>
 </header>
 
-<main>
-    <section class="projects">
-        <h1>My Projects</h1>
-        <div class="project-list">
-            <a href="#" class="project-item">MedTouchVR</a>
-            <a href="#" class="project-item">Dining Philosophers</a>
-            <a href="#" class="project-item">Sudoku Solver</a>
-            <a href="#" class="project-item">Localize</a>
-            <a href="#" class="project-item">WebServer</a>
-            <a href="#" class="project-item">CS Browser Game</a>
+<section class="projects">
+    <h2>My Projects</h2>
+    <div class="project-grid">
+        <div class="project-card">
+            <h3>MedTouchVR</h3>
+            <p>An immersive surgical simulation experience.</p>
+            <a href="#" class="btn">View Project</a>
         </div>
-    </section>
-</main>
+        <div class="project-card">
+            <h3>Dining Philosophers</h3>
+            <p>A concurrency simulation using POSIX locks.</p>
+            <a href="#" class="btn">View Project</a>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2024 Aiden Ross. All Rights Reserved.</p>
+</footer>
+
+<script src="js/main.js"></script>
 </body>
 </html>

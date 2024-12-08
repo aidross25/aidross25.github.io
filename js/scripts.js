@@ -8,3 +8,9 @@ function updateTitle() {
 }
 
 setInterval(updateTitle, 3000);
+
+document.getElementById("contact-form").addEventListener("submit", function(e) {
+    e.preventDefault();
+    alert("Message Sent! (Integration Placeholder)");
+});
+
